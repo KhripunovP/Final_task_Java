@@ -135,7 +135,6 @@ public class Toys implements addNewToys {
         double sum = 0;
         double div = 0;
         int rand = (int) (Math.random() * 100);
-        System.out.println(rand);
         double forSearch = 0;
         ArrayList<Integer> listProd = new ArrayList<>();
         ArrayList<Double> listDiv = new ArrayList<>();
@@ -166,7 +165,7 @@ public class Toys implements addNewToys {
     }
 
     public void writingFile(Toys toy) {
-        try (FileWriter writer = new FileWriter("WinnedToys.txt", true)) {
+        try (FileWriter writer = new FileWriter("src/main/java/Java_toys_shop/WonToys.txt", true)) {
             String text = toy.getName();
             writer.write(text);
             writer.append('\n');
