@@ -148,7 +148,6 @@ public class Toys implements addNewToys {
         }
         for (int j = 0; j < listProd.size(); j++) {
             div = Math.floor(listProd.get(j) / sum * 100);
-            System.out.println(div);
             listDiv.add(div);
         }
         for (int i = 0; i < listDiv.size(); i++) {
